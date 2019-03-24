@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#1b98ce</color>
+    <color name="primary_dark">#1c5986</color>
+    <color name="accent">#ce1024</color>
+    <color name="item_background">#fff</color>
+    <color name="status_offline">#c8ccd7</color>
+    <color name="status_online">@color/primary</color>
+    <color name="selected">#f0e58c</color>
+</resources>

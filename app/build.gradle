@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    defaultConfig {
+        applicationId "com.subtlefox.exchange"
+
+        versionCode version_code
+        versionName version_name
+
+        compileSdkVersion = compile_sdk
+        targetSdkVersion target_sdk
+        minSdkVersion min_sdk
+
+        buildToolsVersion build_tools_version
+
+        buildConfigField "long", "REFRESH_RATE_SEC", "1"
+        buildConfigField "long", "TIMEOUT_SEC", "10"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        test.java.srcDirs += 'src/test/kotlin'
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlin_version}"
+
+    implementation ("com.android.support:appcompat-v7:${support_lib_version}")
+    implementation ("com.android.support:recyclerview-v7:${support_lib_version}")
+    implementation "com.android.support.constraint:constraint-layout:${constraint_version}"
+    implementation "android.arch.lifecycle:extensions:${arch_components_version}"
+
+    implementation "com.google.dagger:dagger-android-support:${dagger_version}"
+    kapt "com.google.dagger:dagger-compiler:${dagger_version}"
+    kapt "com.google.dagger:dagger-android-processor:${dagger_version}"
+
+    implementation "io.reactivex.rxjava2:rxjava:${rx_java_version}"
+    implementation "io.reactivex.rxjava2:rxandroid:${rx_android_version}"
+
+    implementation "com.squareup.okhttp3:logging-interceptor:${okhttp3_version}"
+    implementation "com.squareup.retrofit2:retrofit:${retrofit_version}"
+    implementation "com.squareup.retrofit2:converter-gson:${retrofit_version}"
+    implementation "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:${rx_retrofit_adapter_version}"
+    implementation "com.google.code.gson:gson:${gson_version}"
+
+    implementation ("com.squareup.picasso:picasso:${picasso_version}") {
+        exclude group: 'com.android.support', module: 'exifinterface'
+    }
+
+    testImplementation "junit:junit:${junit_version}"
+    testImplementation "io.mockk:mockk:${mockk_version}"
+}
