@@ -1,9 +1,9 @@
 package com.subtlefox.currencyrates.presentation
 
-import android.support.v7.recyclerview.extensions.AsyncListDiffer
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.AsyncListDiffer
+import androidx.recyclerview.widget.RecyclerView
 import com.subtlefox.currencyrates.R
 import io.reactivex.Observable
 import io.reactivex.subjects.PublishSubject

@@ -1,6 +1,6 @@
 package com.subtlefox.currencyrates.presentation
 
-import android.support.v7.util.DiffUtil
+import androidx.recyclerview.widget.DiffUtil
 
 class DiffUtilsCallback
     : DiffUtil.ItemCallback<CurrencyUiModel>() {

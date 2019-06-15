@@ -1,6 +1,6 @@
 package com.subtlefox.currencyrates.di.modules
 
-import android.arch.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProvider
 import com.subtlefox.currencyrates.di.ViewModelFactory
 import dagger.Binds
 import dagger.Module

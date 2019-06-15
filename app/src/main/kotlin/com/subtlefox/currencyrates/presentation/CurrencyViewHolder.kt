@@ -1,7 +1,6 @@
 package com.subtlefox.currencyrates.presentation
 
 import android.annotation.SuppressLint
-import android.support.v7.widget.RecyclerView
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.MotionEvent
@@ -9,6 +8,7 @@ import android.view.View
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import com.subtlefox.currencyrates.R
 import com.subtlefox.currencyrates.presentation.utils.openKeyboard

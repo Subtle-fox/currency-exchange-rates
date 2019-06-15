@@ -1,6 +1,6 @@
 package com.subtlefox.currencyrates.di.modules
 
-import android.arch.lifecycle.ViewModel
+import androidx.lifecycle.ViewModel
 import com.subtlefox.currencyrates.data.InternetConnectivity
 import com.subtlefox.currencyrates.data.LocalRepository
 import com.subtlefox.currencyrates.data.RemoteRepository

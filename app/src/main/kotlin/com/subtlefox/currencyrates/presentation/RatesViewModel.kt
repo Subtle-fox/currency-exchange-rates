@@ -1,6 +1,6 @@
 package com.subtlefox.currencyrates.presentation
 
-import android.arch.lifecycle.*
+import androidx.lifecycle.*
 import android.util.Log
 import com.subtlefox.currencyrates.BuildConfig
 import com.subtlefox.currencyrates.domain.ConvertRatesUseCase

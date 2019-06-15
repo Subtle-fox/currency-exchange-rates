@@ -1,6 +1,6 @@
 package com.subtlefox.currencyrates.presentation.utils
 
-import android.support.v4.content.ContextCompat
+import androidx.core.content.ContextCompat
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText

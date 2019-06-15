@@ -1,15 +1,15 @@
 package com.subtlefox.currencyrates.presentation
 
-import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModelProvider
-import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.view.View
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.subtlefox.currencyrates.App
 import com.subtlefox.currencyrates.R
 import com.subtlefox.currencyrates.presentation.utils.hideKeyboard
@@ -117,5 +117,4 @@ class RatesActivity : AppCompatActivity() {
     companion object {
         const val TAG = "Rates"
     }
-
 }

@@ -3,7 +3,7 @@ package com.subtlefox.currencyrates.data
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkRequest
-import android.support.v4.content.ContextCompat.getSystemService
+import androidx.core.content.ContextCompat.getSystemService
 import com.subtlefox.currencyrates.domain.repository.ConnectivityRepository
 import io.reactivex.Observable
 import io.reactivex.Single
